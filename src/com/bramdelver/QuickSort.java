@@ -11,7 +11,7 @@ public class QuickSort {
 
     public static void quickSort(Comparable[] toBeSorted) {
         StdRandom.shuffle(toBeSorted); // Random shuffle of the array
-        sort(toBeSorted, 0, toBeSorted.length);
+        sort(toBeSorted, 0, toBeSorted.length - 1);
         InsertionSort.insertionSort(toBeSorted, 0, toBeSorted.length); // Final pass with insertion sort
     }
 
